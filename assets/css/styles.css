@@ -1,0 +1,260 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Navigation */
+header {
+  height: 52px;
+}
+.navigation {
+  background-color: #deb700;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.nav {
+  display: inline-block;
+}
+
+.nav > li {
+  display: inline-block;
+}
+
+.nav li {
+  padding: 16px;
+}
+
+.nav > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.search-btn {
+  float: right;
+  text-align: center;
+  padding: 8px;
+}
+
+.search-btn .search-text {
+  border: none;
+  padding: 8px;
+  border-radius: 50px;
+}
+
+/* Logo and Slogan */
+.top-logo {
+  background-color: #fff;
+  text-align: center;
+}
+
+.top-logo .logo-lion {
+  height: 150px;
+  background-color: #fff;
+}
+
+/* Slider */
+#slider {
+  position: relative;
+  /* padding-top: 40%; */
+  /* background: url("/assets/img/slider/20210106_094420.jpg") top center / cover
+    no-repeat; */
+}
+
+#slider .slider {
+  width: 100%;
+}
+
+/* Section Common CSS */
+.about-section,
+.services-section,
+.news-section,
+.help-section,
+.map-section,
+.partners-section {
+  padding: 50px 0;
+}
+.section-heading {
+  color: #deb700;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.section-subheading {
+  opacity: 0.7;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* About Section */
+.about-flex {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.about-content {
+  width: 25%;
+}
+
+.about-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.about-content .type-about {
+  color: #deb700;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about-content .about-text {
+  text-align: justify;
+  padding: 20px 0;
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
+
+.about-content .view-more {
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #deb700;
+  text-transform: uppercase;
+}
+
+/* Services Section */
+.services-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.services-content {
+  width: 26%;
+  margin-top: 60px;
+}
+
+.services-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.services-content .type-services {
+  color: #deb700;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.services-content .services-text {
+  text-align: justify;
+  padding: 20px 0;
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
+
+.services-content .view-more {
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #deb700;
+  text-transform: uppercase;
+}
+
+/* News Section */
+.news-flex {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.news-content {
+  width: 25%;
+}
+
+.news-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.news-content .type-news {
+  color: #deb700;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.news-content .news-text {
+  text-align: justify;
+  padding: 20px 0;
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
+
+.news-content .view-more {
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #deb700;
+  text-transform: uppercase;
+}
+
+/* Help Section */
+.help-flex {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ccc;
+  height: 300px;
+}
+
+.help-section i {
+  font-size: 30px;
+  color: #fff;
+  background-color: #deb700;
+  padding: 30px;
+  border-radius: 50%;
+}
+
+.help-section .help-content {
+  margin-top: 50px;
+}
+
+/* Map Section */
+.map-section img {
+  width: 100%;
+  text-align: center;
+}
+/* Partners Section */
+.partners-section {
+  text-align: center;
+}
+
+.partners-section img {
+  width: 10%;
+}
+/* Footer */
+.footer-content {
+  padding: 20px 10%;
+  line-height: 2;
+  background-color: #deb700;
+}
