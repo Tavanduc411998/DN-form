@@ -10,17 +10,56 @@ html {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* Navigation */
+/* Section Common CSS */
+.about-section,
+.services-section,
+.news-section,
+.help-section,
+.map-section,
+.partners-section {
+  padding: 100px 0;
+}
+.section-heading {
+  font-size: 30px;
+  color: #6e9cd8;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.section-subheading {
+  font-size: 20px;
+  color: #333;
+  opacity: 0.7;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+/* Header */
 header {
   height: 52px;
-}
-.navigation {
-  background-color: #deb700;
+  background-color: #6e9cd8;
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+}
+
+/* Logo */
+.top-logo {
+  text-align: center;
+}
+
+.top-logo .logo-nhakhoa {
+  height: 52px;
+}
+
+/* Navigation */
+.navigation {
 }
 
 .nav {
@@ -36,11 +75,13 @@ header {
 }
 
 .nav > li > a {
+  font-size: 20px;
+  color: #f2f6f7;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
 }
 
+/* Search */
 .search-btn {
   float: right;
   text-align: center;
@@ -53,111 +94,74 @@ header {
   border-radius: 50px;
 }
 
-/* Logo and Slogan */
-.top-logo {
-  background-color: #fff;
-  text-align: center;
-}
-
-.top-logo .logo-lion {
-  height: 150px;
-  background-color: #fff;
-}
-
 /* Slider */
 #slider {
   position: relative;
-  /* padding-top: 40%; */
-  /* background: url("/assets/img/slider/20210106_094420.jpg") top center / cover
-    no-repeat; */
+  width: 100%;
+  height: 450px;
+  background: url("/assets/img/slider/slider.png") top center / cover no-repeat;
+  margin-top: 72px;
 }
 
 #slider .slider {
   width: 100%;
 }
 
-/* Section Common CSS */
-.about-section,
-.services-section,
-.news-section,
-.help-section,
-.map-section,
-.partners-section {
-  padding: 50px 0;
-}
-.section-heading {
-  color: #deb700;
-  font-weight: 500;
-  text-align: center;
-  padding-bottom: 8px;
-}
-
-.section-subheading {
-  opacity: 0.7;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
 /* About Section */
 .about-flex {
   display: flex;
-  justify-content: space-around;
-  text-align: center;
+  justify-content: center;
+  padding: 0 10%;
 }
 
 .about-content {
-  width: 25%;
-}
-
-.about-content img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.about-content .type-about {
-  color: #deb700;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.about-content .about-text {
+  width: 50%;
   text-align: justify;
-  padding: 20px 0;
-  line-height: 1.4;
-  letter-spacing: 2px;
 }
 
-.about-content .view-more {
-  padding: 12px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #deb700;
-  text-transform: uppercase;
+.about-content ul {
+  list-style-type: none;
+  padding-right: 50px;
+}
+
+.about-content li {
+  margin-top: 6px;
+  letter-spacing: 2px;
+  line-height: 1.6;
+}
+
+.about-image {
+  width: 50%;
+  height: 260px;
+  background: url("/assets/img/about/about1.jpg") top center / cover no-repeat;
+  border-radius: 15px;
+  box-shadow: 0 10px 36px rgb(227 230 236 / 60%);
 }
 
 /* Services Section */
+.services-section {
+  background-color: #edf3ee;
+}
+
 .services-flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
+  padding: 0 10%;
 }
 
 .services-content {
   width: 26%;
-  margin-top: 60px;
 }
 
 .services-content img {
-  width: 100%;
-  border-radius: 10px;
+  width: 40%;
   margin-bottom: 20px;
 }
 
 .services-content .type-services {
-  color: #deb700;
+  color: #6e9cd8;
   font-size: 20px;
   font-weight: 500;
 }
@@ -174,87 +178,132 @@ header {
   border-radius: 25px;
   text-decoration: none;
   color: #fff;
-  background-color: #deb700;
+  background-color: #6e9cd8;
   text-transform: uppercase;
 }
 
 /* News Section */
 .news-flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
+  padding: 0 10%;
 }
 
 .news-content {
-  width: 25%;
+  width: 32%;
+  text-align: justify;
 }
 
 .news-content img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
+  box-shadow: 0 10px 36px rgb(227 230 236 / 60%);
 }
 
 .news-content .type-news {
-  color: #deb700;
+  color: #6e9cd8;
   font-size: 20px;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.news-content h4 {
+  color: #6e9cd8;
   font-weight: 500;
 }
 
-.news-content .news-text {
-  text-align: justify;
-  padding: 20px 0;
-  line-height: 1.4;
+.news-content ul {
+  line-height: 1.6;
   letter-spacing: 2px;
+  list-style-type: none;
 }
 
-.news-content .view-more {
-  padding: 12px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #deb700;
-  text-transform: uppercase;
+.news-content li p {
+  font-size: 14px;
+}
+.news-content hr {
+  margin: 10px 0;
 }
 
 /* Help Section */
-.help-flex {
+.help-section {
+  background-color: #edf3ee;
+}
+
+.help-content {
+  width: 100%;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.help-form .name-and-phone,
+.help-form .email-and-service,
+.help-form .date-and-time {
   display: flex;
-  text-align: center;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #ccc;
-  height: 300px;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.help-section i {
-  font-size: 30px;
+.help-form .name-and-phone div,
+.help-form .email-and-service div,
+.help-form .date-and-time div {
+  width: 49.5%;
+  padding-bottom: 10px;
+}
+
+.help-form div input,
+.help-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.help-form textarea {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.help-submit-btn {
   color: #fff;
-  background-color: #deb700;
-  padding: 30px;
-  border-radius: 50%;
+  background-color: #6e9cd8;
+  border-radius: 5px;
+  border: none;
 }
 
-.help-section .help-content {
-  margin-top: 50px;
+/* Footer */
+
+#footer {
+}
+.footer-content {
+  color: #f2f6f7;
+  line-height: 2;
+  background-color: #6e9cd8;
+  padding: 50px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Map Section */
-.map-section img {
+.footer-content .footer-content-left {
+  width: 100%;
+}
+
+.footer-content .footer-content-left img {
+  width: 40%;
+}
+
+.footer-content .footer-content-right {
   width: 100%;
   text-align: center;
 }
-/* Partners Section */
-.partners-section {
-  text-align: center;
-}
 
-.partners-section img {
-  width: 10%;
-}
-/* Footer */
-.footer-content {
-  padding: 20px 10%;
-  line-height: 2;
-  background-color: #deb700;
+.work-schedule {
+  display: flex;
+  justify-content: space-around;
 }
