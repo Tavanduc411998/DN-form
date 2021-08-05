@@ -324,3 +324,7 @@ header .mobile-menu-btn {
   display: flex;
   justify-content: space-around;
 }
+
+#footer img {
+  width: 30%;
+}
