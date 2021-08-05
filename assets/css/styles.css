@@ -47,6 +47,7 @@ header {
   left: 0;
   right: 0;
   z-index: 1;
+  text-align: center;
 }
 
 /* Logo */
@@ -79,6 +80,10 @@ header {
   color: #f2f6f7;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+header .mobile-menu-btn {
+  display: none;
 }
 
 /* Search */
